@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MySite — Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">☰</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="reveal">Contact</h1>
+    <form id="contactForm" class="contact-form reveal" novalidate>
+      <label>
+        Name
+        <input type="text" name="name" id="name" required minlength="2" />
+        <span class="error" id="err-name" aria-live="polite"></span>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" id="email" required />
+        <span class="error" id="err-email" aria-live="polite"></span>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" id="message" rows="6" required minlength="10"></textarea>
+        <span class="error" id="err-message" aria-live="polite"></span>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formSuccess" class="success" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-4"></span> MySite</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
