@@ -19,3 +19,7 @@ See the repository root and `css/` and `js/` folders.
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
+
+# Python 3
+python -m http.server 8000
+# then open http://localhost:8000
