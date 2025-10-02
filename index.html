@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MySite — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="reveal">Build beautiful websites that work.</h1>
+        <p class="reveal">Fast, responsive, and production-ready—see examples and hire me.</p>
+        <p class="cta reveal"><a href="services.html" class="btn">Our Services</a> <a href="contact.html" class="btn ghost">Contact</a></p>
+      </div>
+    </section>
+
+    <!-- Services preview -->
+    <section class="cards container">
+      <article class="card reveal">
+        <h3>Design</h3>
+        <p>Modern, accessible UI design tailored to your brand.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Frontend</h3>
+        <p>Responsive development with performance and SEO in mind.</p>
+      </article>
+      <article class="card reveal">
+        <h3>Deploy</h3>
+        <p>CI/CD, hosting on GitHub Pages / Netlify / Vercel.</p>
+      </article>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta container reveal">
+      <h2>Ready to start?</h2>
+      <p><a href="contact.html" class="btn">Get in touch</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MySite — Built with care</p>
+      <nav aria-label="Footer">
+        <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
